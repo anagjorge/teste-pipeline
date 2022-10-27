@@ -5,9 +5,6 @@ pipeline {
     }
     stages {
         stage('step1') {
-            environment {
-                OUTRO = 'outro valor'
-            }
             steps {
                 sh 'printenv'
             }
